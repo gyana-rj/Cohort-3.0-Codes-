@@ -1,0 +1,33 @@
+.inp{
+    display: inline;
+    margin-top: 19px;
+    margin-left: 500px;
+    background-color: black;
+    border-radius: 9px;
+    height: 26px;
+    color: white;
+}
+
+.but1{
+    border-radius: 9px;
+    height: 26px;
+    width: 80px;
+    color: white;
+    background-color: black;
+    margin: 16px;
+    margin-left: 42px;
+}
+.but2{
+    border-radius: 9px;
+    height: 26px;
+    width: 60px;
+    color: white;
+    background-color: black;
+    /* margin: 17px; */
+    
+}
+
+
+body{
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20231001/pngtree-completed-to-do-list-icon-a-3d-rendering-of-a-notebook-image_13576111.png");
+}

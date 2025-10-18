@@ -1,0 +1,61 @@
+.my-link {
+    width: 169px;
+    margin-left: 200px;
+    margin-top: 24px;
+}
+  
+.signup {
+    color: grey;
+    font-size: 21px;
+    margin-left: 600px;
+
+}
+.about{
+    color: grey;
+    font-size: 21px;
+    margin-left: 70px;
+}
+.products{
+    color: grey;
+    font-size: 21px;
+    margin-left: 70px;
+}
+.pricing{
+    color: grey;
+    font-size: 21px;
+    margin-left: 70px;
+}
+.contact{
+    color: grey;
+    font-size: 21px;
+    margin-left: 70px;
+}
+.landing{
+    width: 1300px;
+    height: 570px;
+}
+.zerodhapng{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-size: 70px;
+    font-weight: 100;
+    color: rgb(77, 76, 76);
+    text-align: center;
+}
+h6{
+    font-size: 35px;
+    font-weight: 100;
+    color: rgb(77, 76, 76);
+    text-align: center;
+}
+.button{
+    background-color: rgba(7, 117, 220, 0.963);
+    padding: 15px; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    font-size: 30px;
+    color: white;
+    margin-left: 800px;
+}

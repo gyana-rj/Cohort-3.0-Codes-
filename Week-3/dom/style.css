@@ -1,0 +1,46 @@
+.but1{
+    border-radius: 9px;
+    height: 26px;
+    width: 60px;
+    color: white;
+    background-color: black;
+    margin: 17px;
+}
+.but2{
+    border-radius: 9px;
+    height: 26px;
+    width: 60px;
+    color: white;
+    background-color: black;
+    margin: 17px;
+    margin-left: 19px;
+}
+.inp{
+    background-color: black;
+    border-radius: 7px;
+    height: 22px;
+    color: white;
+}
+.but3{
+    border-radius: 9px;
+    height: 26px;
+    width: 80px;
+    color: white;
+    background-color: black;
+    margin: 17px;
+    margin-left: 42px;
+}
+.but4{
+    border-radius: 9px;
+    height: 26px;
+    width: 130px;
+    color: white;
+    background-color: black;
+    margin-left: 2px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url("/Users/gyanaranjansahoo/Desktop/Cohort 3.0/Web_Dev/Week-3/pic.jpg");
+}

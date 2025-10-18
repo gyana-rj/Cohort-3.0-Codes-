@@ -1,0 +1,36 @@
+body{
+    background-color: #0e0e0e;
+}
+.toplink{
+    color: grey;
+    cursor: pointer;
+    padding-left: 10px;
+
+}
+
+.box{
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 150px;
+    margin-left: 120px;
+}
+
+.box1{
+    font-size: 50px;
+    color: rgb(236, 228, 228);
+    margin-left: 125px;
+}
+/* 
+.hero{
+    font-size: 14px;
+font-weight: 600;
+padding: 8px 12px;
+border-radius: 32px;
+background-color: var(--card-background);
+border: 1px solid var(--card-border);
+color: var(--foreground);
+width: max-content;
+margin-bottom: 8px;
+} */

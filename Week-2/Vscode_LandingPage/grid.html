@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+        }
+        .left{
+            background-color: red;
+            height: 170px;
+        }
+        .right{
+            background-color: blue;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+        }
+        .p1{
+            padding-bottom: 17px;
+            font-weight: 700;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+           <span style="font-size: 30px; display: flex; justify-content: center; align-items: center; font-weight: 700;"> Left</span>
+            <br>
+            <b> text text text text text text text text text text text text text text text text </b>
+        </div>
+        <div class="right">
+            <span>
+                <p class="p1">Column 1</p>
+                <p class="p1">Column 1</p>
+                <p class="p1">Column 1</p>
+            </span>
+
+            <span>
+                <p class="p1">Column 2</p>
+                <p class="p1">Column 2</p> 
+                
+                <p class="p1">Column 2</p> 
+            </span>
+
+            <span>
+                <p class="p1">Column 3</p>
+                <p class="p1">Column 3</p> 
+                <p class="p1">Column 3</p> 
+            </span>
+        </div>
+    </div>
+</body>
+</html>

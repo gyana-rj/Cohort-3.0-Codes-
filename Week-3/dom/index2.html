@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div>
+        <h1 style="margin-left: 50px;">Todo List</h1>
+        <div id="todo-1" style="display: flex;">
+            <h4>1. I have to cross the chasm</h4>
+            <button class="but1" onclick="deleteTodo(1)">Delete</button>
+        </div>
+
+        <div id="todo-2" style="display: flex;">
+            <h4>2. Time to practice archery</h4>
+            <button class="but2" onclick="deleteTodo(2)">Delete</button>
+        </div>
+
+        <div>
+            <input class="inp" type="text" placeholder="Add Todo....">
+            <button class="but3">Add Todo</button>
+        </div>
+    
+        <br>
+        
+        <button class="but4" onclick="deleteTodoRandomly()">Updating element..</button>
+       
+    </div>
+    
+
+
+
+</body>
+
+    <script>
+        function deleteTodo(index)
+        {
+            const deleteEl = document.getElementById("todo-" + index);
+            deleteEl.parentNode.removeChild(deleteEl);
+        }
+
+        function deleteTodoRandomly()
+        {
+            const element = document.querySelector("h4");
+            element.parentNode.removeChild(element);
+        }
+
+        // const divEl = document.createElement("div");
+        // divEl.innerHTML = "Mark as Completed.";
+        // const parentEl = document.querySelector("body");
+        // parentEl.appendChild(divEl);
+    </script>
+
+</html>
