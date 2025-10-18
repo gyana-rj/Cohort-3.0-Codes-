@@ -25,7 +25,7 @@ function delayedCall(fn : () => void){
 }
 
 delayedCall(() =>{
-    console.log("hey there")
+    console.log("hello detective")
 })
 
 
