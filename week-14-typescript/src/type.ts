@@ -1,7 +1,7 @@
 type UserType ={
-    firstName : string,
-    lastName : string,
-    age : number
+    firstName : string;
+    lastName : string;
+    age : number;
 }
 
 function mf(user : UserType){
@@ -44,5 +44,6 @@ const teamLead : TeamLead = {
     startDate : new Date(),
     department : "Tech Support"
 }
+
 
 
