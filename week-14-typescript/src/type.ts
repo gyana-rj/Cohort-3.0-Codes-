@@ -4,6 +4,12 @@ type UserType ={
     age : number;
 }
 
+const user1: UserType = {
+  firstName: "Dexter",
+  lastName: "Morgan",
+  age: 25
+};
+
 function mf(user : UserType){
     if(user.age > 20){
         console.log(`Mfs who watch sopranos`)
@@ -11,12 +17,6 @@ function mf(user : UserType){
         console.log(`Kids who watch saiyaara`);
     }
 }
-
-const user1: UserType = {
-  firstName: "Dexter",
-  lastName: "Morgan",
-  age: 25
-};
 
 mf(user1);
 
