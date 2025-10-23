@@ -24,3 +24,21 @@ class Manager implements People{
 let user = new Manager("tee sharma", 20);
 console.log(user.age);
 console.log(user.isLegal());
+
+
+interface Admin{
+    name : string;
+    permissions : string;
+}
+
+interface User {
+    name : string;
+    age : number;
+}
+
+type UserOrAdmin = Admin | User;
+
+function greet(user : UserOrAdmin){
+    console.log(user.name);
+}
+
