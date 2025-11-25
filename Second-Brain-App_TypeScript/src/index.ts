@@ -2,9 +2,9 @@ import express from "express";
 import mongoose from "mongoose";
 import jwt from "jsonwebtoken";
 import { ContentModel, UserModel } from "./db.js";
-import { JWT_PASSWORD } from "./config.js";
+import { JWT_PASSWORD, MONGODB_URL } from "./config.js";
 import { userMiddleware } from "./middleware.js";
-mongoose.connect("mongodb+srv://gyanaranjansahoo174:3pdv1JZAJlt5V2qW@cluster0.cwufgad.mongodb.net/second-brain")
+mongoose.connect(MONGODB_URL);
 const app = express();
 app.use(express.json());
 
