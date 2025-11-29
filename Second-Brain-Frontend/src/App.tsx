@@ -4,15 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Button } from './components/ui/Button'
 import { PlusIcon } from './icons/PlusIcon'
+import { ShareIcon } from './icons/ShareIcon'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-        <Button startIcon={<PlusIcon/>} variant= "primary" text = "Share" size= "md" onClick={() => {}}/>
-        <Button variant= "secondary" text = "Add Content" size="md" onClick={() => {}} />
-    </>
+    <div className="flex gap-4">
+        <Button startIcon={<ShareIcon size={"md"}/>} variant= "primary" text = "Share" size= "md" onClick={() => {}}/>
+        <Button startIcon={<PlusIcon size={"md"}/>} variant= "secondary" text = "Add Content" size="md" onClick={() => {}} />
+    </div>
   )
 }
 

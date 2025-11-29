@@ -15,17 +15,16 @@ const variantStyles = {
 }
 
 const sizeStyles = {
-    "sm" : "py-1 px-2",
-    "md" : "py-2 px-4",
-    "lg" : "py-4 px-6"
+    "sm" : "py-1 px-2 rounded-sm",
+    "md" : "py-2 px-4 rounded-md",
+    "lg" : "py-4 px-6 rounded-lg"
 }
 
 const defaultStyles = "rounded-md flex"
 
 export const Button = (props : ButttonProps) => {
-    return <button className={`${variantStyles[props.variant]} 
-    ${defaultStyles} ${sizeStyles[props.size]}`}>
-    {props.startIcon ? <div className="pr-2">{props.startIcon}</div> : null} 
+    return <button className= {`${variantStyles[props.variant]}${defaultStyles} ${sizeStyles[props.size]}`}>
+    {props.startIcon ? <div className="pr-2 py-1">{props.startIcon}</div> : null} 
     {props.text}
     {props.endIcon}
     </button>
