@@ -3,35 +3,27 @@
     "rootDir": "./src",
     "outDir": "./dist",
 
-    // Environment / module settings for Node ESM
     "module": "nodenext",
     "moduleResolution": "nodenext",
     "target": "es2020",
     "lib": ["ES2020"],
 
-    // Preserve ESM import/export syntax (do not rewrite imports)
     "verbatimModuleSyntax": true,
-
-    // Allow writing `import express from "express"` (type assistance)
     "allowSyntheticDefaultImports": true,
 
-    // Keep strict checks you already had
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,
 
-    // Outputs
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
 
-    // Misc
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true
   },
-
   "include": ["src"],
   "exclude": ["node_modules", "dist"]
 }
