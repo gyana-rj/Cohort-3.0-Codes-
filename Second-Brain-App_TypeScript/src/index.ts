@@ -7,14 +7,16 @@ import { userMiddleware } from "./middleware.js";
 import { hashPassword, hashValue } from "./hash.js";
 import { z } from "zod";
 import bcrypt from "bcrypt";
+import cors from "cors";
 type AuthedRequest = express.Request & { userId: string };
 mongoose.connect(MONGODB_URL);
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 
 const authZodSchema = z.object({
-    username : z.string().min(6).max(50),
+    username : z.string().min(5).max(50),
     password : z.string().min(6).max(60)
 })
 
@@ -88,8 +90,8 @@ app.post("/api/v1/signin", async (req,res) => {
 });
 
 app.post("/api/v1/content", userMiddleware, async (req, res) => {
-    const title = req.body.title;
     const link = req.body.link;
+    const type = req.body.type
 
     if (!req.userId) {
         return res.status(401).json({
@@ -98,11 +100,12 @@ app.post("/api/v1/content", userMiddleware, async (req, res) => {
     }
 
     await ContentModel.create({
-        title,
         link,
-        userId: new mongoose.Types.ObjectId(req.userId),
+        type,
+        title: req.body.title,
+        userId: req.userId,
         tags: []
-    });
+    })
 
     res.json({
         message: "Content added"
