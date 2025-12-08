@@ -1,20 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Button } from './components/ui/Button'
-import { PlusIcon } from './icons/PlusIcon'
-import { ShareIcon } from './icons/ShareIcon'
+import { Dashboard } from "./pages/DashBoard"
+import { SignIn } from "./pages/SignIn"
+import { SignUp } from "./pages/SignUp"
+import { SharedBrain } from "./pages/SharedBrain"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <div className="flex gap-4">
-        <Button startIcon={<ShareIcon size={"md"}/>} variant= "primary" text = "Share" size= "md" onClick={() => {}}/>
-        <Button startIcon={<PlusIcon size={"md"}/>} variant= "secondary" text = "Add Content" size="md" onClick={() => {}} />
-    </div>
-  )
+
+function App(){
+    return <BrowserRouter>
+        <Routes>
+            <Route path="/signup" element = {<SignUp/>} />
+            <Route path="/signin" element = {<SignIn/>} />
+            <Route path="/dashboard" element = {<Dashboard/>} />
+            <Route path="/brain/:shareLink" element = {<SharedBrain/>} />
+        </Routes>
+    </BrowserRouter>
 }
 
 export default App

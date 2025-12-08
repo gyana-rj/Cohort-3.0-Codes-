@@ -1,17 +1,19 @@
 import type { ReactElement } from "react";
 
-interface ButttonProps {
-    variant : "primary" | "secondary",
-    size : "sm" | "md" | "lg",
-    text : string,
-    startIcon? : ReactElement,
-    endIcon? : ReactElement,
-    onClick : () => void
+interface ButtonProps{
+    variant : "primary" | "secondary";
+    size : "sm" | "md" | "lg";
+    text : string;
+    startIcon? : ReactElement;
+    endIcon? : ReactElement;
+    onClick? : () => void;
+    fullWidth? : boolean;
+    loading? : boolean
 }
 
 const variantStyles = {
     "primary" : "bg-purple-600 text-white",
-    "secondary" : "bg-purple-300 text-blue-600"
+    "secondary" : "bg-purple-200 text-purple-600"
 }
 
 const sizeStyles = {
@@ -20,14 +22,12 @@ const sizeStyles = {
     "lg" : "py-4 px-6 rounded-lg"
 }
 
-const defaultStyles = "rounded-md flex"
+const defaultStyles = "rounded-md flex justify-center items-center font-normal";
 
-export const Button = (props : ButttonProps) => {
-    return <button className= {`${variantStyles[props.variant]}${defaultStyles} ${sizeStyles[props.size]}`}>
-    {props.startIcon ? <div className="pr-2 py-1">{props.startIcon}</div> : null} 
-    {props.text}
-    {props.endIcon}
+export function Button(props : ButtonProps){
+    return <button onClick={props.onClick} className={`${variantStyles[props.variant]} ${defaultStyles} ${sizeStyles[props.size]} ${props.fullWidth ? " w-full" : ""} flex justify-center items-center ${props.loading ? "opacity-45" : ""}`} disabled= {props.loading}>
+        {props.startIcon ? <div className="pr-2 py-1">{props.startIcon}</div> : null}
+        {props.text}
     </button>
-}
+}   
 
-<Button variant="primary" size = "md" text = "share" onClick={() => {}}/>
