@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+*.tsbuildinfo
+
+# Prisma generated files
+src/generated/
+.prisma/
+
+# Environment variables
+.env
+.env.local
+
+# Logs
+*.log
+
+# Prisma config (generated)
+prisma.config.js
+prisma.config.js.map
+prisma.config.d.ts
+prisma.config.d.ts.map
+
+# OS files
+.DS_Store
