@@ -60,7 +60,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className={styles.secondary}
           >
-            Read our docs
+            Read our documentation
           </a>
         </div>
         <Button appName="web" className={styles.secondary}>
