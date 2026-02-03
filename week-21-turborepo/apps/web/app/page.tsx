@@ -60,7 +60,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className={styles.secondary}
           >
-            Read our documentation
+            Read our documentation 
           </a>
         </div>
         <Button appName="web" className={styles.secondary}>
@@ -94,7 +94,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Go to turborepo.com →
+          Go to turborepo.com for more info →
         </a>
       </footer>
     </div>
