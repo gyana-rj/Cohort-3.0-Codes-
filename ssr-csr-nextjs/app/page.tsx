@@ -1,5 +1,9 @@
 export default async function Blog() {
-    const res = await fetch('https://sum-server.100xdevs.com/todos')
+    const res = await fetch('https://sum-server.100xdevs.com/todos', {
+      next: {
+        revalidate : 10
+      }
+    });
 
     const data = await res.json();
     const todos = data.todos;
